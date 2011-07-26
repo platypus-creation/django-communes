@@ -1,2 +1,2 @@
 include LICENSE README.md AUTHORS
-recursive-include communes/fixtures *.json
+recursive-include communes/fixtures *.json.zip
