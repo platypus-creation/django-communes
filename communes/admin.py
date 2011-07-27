@@ -6,8 +6,8 @@ from communes.models import Commune
 
 class CommuneAdmin(GeoModelAdmin):
     search_fields = ('name',)
+    fields = ('name', 'postal_code', 'insee_code')
     order = 1
     list_per_page = 300
 
 admin.site.register(Commune, CommuneAdmin)
-# admin.site.register(Commune)
