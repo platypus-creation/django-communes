@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name = "Communes",
+    name = "django-communes",
     version = "0.1.0",
     description = """
     A django app with the list of all French Communes with Postal code, Insee Code, Population, Latitude and Longitude
