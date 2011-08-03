@@ -17,3 +17,14 @@ class Commune(geomodels.Model):
 
     def __unicode__(self):
         return self.name
+
+    def lng_lat(self):
+        return map(lambda x : float(x), str(self.point).replace("POINT (", "").replace(")", "").split(" "))
+    
+    @property
+    def latitude(self):
+        return self.lng_lat()[1]
+
+    @property
+    def longitude(self):
+        return self.lng_lat()[0]
